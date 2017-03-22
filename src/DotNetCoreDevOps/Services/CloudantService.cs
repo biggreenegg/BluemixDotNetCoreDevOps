@@ -24,7 +24,7 @@ namespace CloudantDotNet.Services
             Console.WriteLine("Auth sent is: " + user.username);
             using (var client = CloudantClient())
             {
-                //var query = "{ \"selector\": { \"username\": \"" + user.username + "\", \"password\": \"" + user.password + "\"}}";
+                //ideate!!! var query = "{ \"selector\": { \"username\": \"" + user.username + "\", \"password\": \"" + user.password + "\"}}";
                 String[] filterquery = new String[] { "username", "password" };
                 CloudantQuery query = new CloudantQuery(user, filterquery);
 
